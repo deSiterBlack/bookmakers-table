@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "logo": "assets/img/bookmakers/1.png",
+    "rating": 4.7,
+    "review_count": 123,
+    "bonus_amount": 10000,
+    "badge": "exclusive",
+    "internal_link": "/bk/1",
+    "external_link": "https://partner1.com"
+  },
+  {
+    "id": 2,
+    "logo": "assets/img/bookmakers/2.png",
+    "rating": 4.2,
+    "review_count": 87,
+    "bonus_amount": 10000,
+    "badge": "no-deposit",
+    "internal_link": "/bk/2",
+    "external_link": "https://partner2.com"
+  },
+  {
+    "id": 3,
+    "logo": "assets/img/bookmakers/3.png",
+    "rating": 3.6,
+    "review_count": 455,
+    "bonus_amount": 0,
+    "badge": "exclusive",
+    "internal_link": "/bk/3",
+    "external_link": "https://partner3.com"
+  },
+  {
+    "id": 4,
+    "logo": "assets/img/bookmakers/4.png",
+    "rating": 3.8,
+    "review_count": 25,
+    "bonus_amount": 20000,
+    "badge": "no-deposit",
+    "internal_link": "/bk/4",
+    "external_link": "https://partner4.com"
+  },
+  {
+    "id": 5,
+    "logo": "assets/img/bookmakers/5.png",
+    "rating": 3.9,
+    "review_count": 41,
+    "bonus_amount": 0,
+    "badge": "no-deposit",
+    "internal_link": "/bk/5",
+    "external_link": "https://partner5.com"
+  },
+  {
+    "id": 6,
+    "logo": "assets/img/bookmakers/5.png",
+    "rating": 3.5,
+    "review_count": 145,
+    "bonus_amount": 35000,
+    "badge": "no-deposit",
+    "internal_link": "/bk/6",
+    "external_link": "https://partner6.com"
+  },
+  {
+    "id": 7,
+    "logo": "assets/img/bookmakers/5.png",
+    "rating": 4.9,
+    "review_count": 45,
+    "bonus_amount": 0,
+    "badge": "no-deposit",
+    "internal_link": "/bk/7",
+    "external_link": "https://partner7.com"
+  }
+]

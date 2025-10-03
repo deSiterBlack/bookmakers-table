@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Верстка таблицы рейтинга букмекеров</title>
+
+    <meta name="author" content="Nomad" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/main.css">
+</head>
+
+<body>
+
+<header id="header" class="header">
+
+    <h1>Блок: рейтинг букмекеров</h1>
+            
+</header>
+
+    <main id="main" class="main">
+
+        <p>Макет таблицы букмекеров с имитацией асинхронного обновления.</p>
+
+        <div class="bookmakers-top">
+            <div class="bookmakers-top__header">
+                <div class="bookmakers-top__title-wrap">
+                    <h2>
+                        <div class="bookmakers-top__title-desktop">Топ букмекерских контор</div>
+                        <div class="bookmakers-top__title-mobile">Рейтинг букмекерских контор</div>
+                    </h2>
+                </div>
+                <div class="bookmakers-top__menu-btn">
+                    <svg class="bookmakers-top__menu-btn-svg" width="4px" height="17px"><use href="assets/img/sprite.svg#menu-ellipsis"></use></svg>
+                    <div class="bookmakers-top__menu">
+                        <div class="bookmakers-top__menu-item js_top-update" data-type="byuser">Народный рейтинг</div>
+                        <div class="bookmakers-top__menu-item js_top-update" data-type="byeditors">Рейтинг редакции</div>
+                        <div class="bookmakers-top__menu-item js_top-update" data-type="bybonus">Народный по бонусу</div>
+                        <div class="bookmakers-top__menu-item js_top-update" data-type="bysubrating">Народный по надёжности</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bookmakers-top__filter">
+                <div class="bookmakers-filter">
+                    <div class="bookmakers-filter__item active">
+                        <div class="bookmakers-filter__item-label js_top-update" data-type="byuser">
+                            Народный рейтинг
+                        </div>
+                    </div>
+                    <div class="bookmakers-filter__item">
+                        <div class="bookmakers-filter__item-label js_top-update" data-type="byeditors">
+                            Рейтинг редакции
+                        </div>
+                    </div>
+                    <div class="bookmakers-filter__item">
+                        <div class="bookmakers-filter__item-label js_top-update" data-type="bybonus">
+                            Народный по бонусу
+                        </div>
+                    </div>
+                    <div class="bookmakers-filter__item">
+                        <div class="bookmakers-filter__item-label js_top-update" data-type="bysubrating">
+                            Народный по надёжности
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bookmakers-top__cards">
+
+                <div class="bookmaker-card">
+                    <div class="bookmaker-card__sect bookmaker-card__logo">
+                        <div class="bookmaker-logo">
+                            <img class="bookmaker-logo__img" src="assets/img/bookmakers/1.png">
+                            <div class="bookmaker-logo__check">
+                                <svg class="bookmaker-logo__check-svg" ><use href="assets/img/sprite.svg#check-circle"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__rating">
+                        <div class="rating">
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <div class="rating__value">4.4</div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__comments-count">
+                        <div class="comments-count">
+                            <svg class="comments-count__icon-svg"><use href="assets/img/sprite.svg#chat"></use></svg>
+                            <div class="comments-count__value">
+                                325
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__bonus">
+                        <div class="bonus">
+                            <div class="bonus__row">
+                                <div class="bonus__badge">
+                                    <div class="badge badge--extra">Эксклюзив</div>
+                                </div>
+                            </div>
+                            <div class="bonus__row">
+                                <div class="bonus__icon">
+                                    <svg class="bonus__icon-svg"><use href="assets/img/sprite.svg#gift"></use></svg>
+                                </div>
+                                <div class="bonus__value">23K ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__controls">
+                        <a class="btn btn--common" href="">Обзор</a>
+                        <a class="btn" href="">Сайт</a>
+                    </div>
+                </div>
+                <div class="bookmaker-card">
+                    <div class="bookmaker-card__sect bookmaker-card__logo">
+                        <div class="bookmaker-logo">
+                            <img class="bookmaker-logo__img" src="assets/img/bookmakers/2.png">
+                            <div class="bookmaker-logo__check">
+                                <svg class="bookmaker-logo__check-svg" ><use href="assets/img/sprite.svg#check-circle"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__rating">
+                        <div class="rating">
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <div class="rating__value">3.9</div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__comments-count">
+                        <div class="comments-count">
+                            <svg class="comments-count__icon-svg"><use href="assets/img/sprite.svg#chat"></use></svg>
+                            <div class="comments-count__value">
+                                325
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__bonus">
+                        <div class="bonus">
+                            <div class="bonus__row">
+                                <div class="bonus__badge">
+                                    <div class="badge badge--success">Без депозита</div>
+                                </div>
+                            </div>
+                            <div class="bonus__row">
+                                <div class="bonus__icon">
+                                    <svg class="bonus__icon-svg"><use href="assets/img/sprite.svg#gift"></use></svg>
+                                </div>
+                                <div class="bonus__value">15K ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__controls">
+                        <a class="btn btn--common" href="">Обзор</a>
+                        <a class="btn" href="">Сайт</a>
+                    </div>
+                </div>
+                <div class="bookmaker-card">
+                    <div class="bookmaker-card__sect bookmaker-card__logo">
+                        <div class="bookmaker-logo">
+                            <img class="bookmaker-logo__img" src="assets/img/bookmakers/3.png">
+                            <div class="bookmaker-logo__check">
+                                <svg class="bookmaker-logo__check-svg" ><use href="assets/img/sprite.svg#check-circle"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__rating">
+                        <div class="rating">
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <div class="rating__value">4.1</div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__comments-count">
+                        <div class="comments-count">
+                            <svg class="comments-count__icon-svg"><use href="assets/img/sprite.svg#chat"></use></svg>
+                            <div class="comments-count__value">
+                                325
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__bonus">
+                        <div class="bonus">
+                            <div class="bonus__row">
+                                <div class="bonus__badge">
+                                    <div class="badge badge--extra">Эксклюзив</div>
+                                </div>
+                            </div>
+                            <div class="bonus__row">
+                                <div class="bonus__icon">
+                                    <svg class="bonus__icon-svg"><use href="assets/img/sprite.svg#gift"></use></svg>
+                                </div>
+                                <div class="bonus__value">125K ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__controls">
+                        <a class="btn btn--common" href="">Обзор</a>
+                        <a class="btn" href="">Сайт</a>
+                    </div>
+                </div>
+                <div class="bookmaker-card">
+                    <div class="bookmaker-card__sect bookmaker-card__logo">
+                        <div class="bookmaker-logo">
+                            <img class="bookmaker-logo__img" src="assets/img/bookmakers/4.png">
+                            <div class="bookmaker-logo__check">
+                                <svg class="bookmaker-logo__check-svg" ><use href="assets/img/sprite.svg#check-circle"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__rating">
+                        <div class="rating">
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <div class="rating__value">3.9</div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__comments-count">
+                        <div class="comments-count">
+                            <svg class="comments-count__icon-svg"><use href="assets/img/sprite.svg#chat"></use></svg>
+                            <div class="comments-count__value">
+                                325
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__bonus">
+                        <div class="bonus">
+                            <div class="bonus__row">
+                                <div class="bonus__badge">
+                                    <div class="badge badge--error">Нет бонуса</div>
+                                </div>
+                            </div>
+                            <div class="bonus__row">
+                                <div class="bonus__icon">
+                                    <svg class="bonus__icon-svg"><use href="assets/img/sprite.svg#gift"></use></svg>
+                                </div>
+                                <div class="bonus__value">35K ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__controls">
+                        <a class="btn btn--common" href="">Обзор</a>
+                        <a class="btn" href="">Сайт</a>
+                    </div>
+                </div>
+                <div class="bookmaker-card">
+                    <div class="bookmaker-card__sect bookmaker-card__logo">
+                        <div class="bookmaker-logo">
+                            <img class="bookmaker-logo__img" src="assets/img/bookmakers/5.png">
+                            <div class="bookmaker-logo__check">
+                                <svg class="bookmaker-logo__check-svg" ><use href="assets/img/sprite.svg#check-circle"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__rating">
+                        <div class="rating">
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <div class="rating__value">4.6</div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__comments-count">
+                        <div class="comments-count">
+                            <svg class="comments-count__icon-svg"><use href="assets/img/sprite.svg#chat"></use></svg>
+                            <div class="comments-count__value">
+                                325
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__bonus">
+                        <div class="bonus">
+                            <div class="bonus__row">
+                                <div class="bonus__badge">
+                                    <div class="badge badge--extra">Эксклюзив</div>
+                                </div>
+                            </div>
+                            <div class="bonus__row">
+                                <div class="bonus__icon">
+                                    <svg class="bonus__icon-svg"><use href="assets/img/sprite.svg#gift"></use></svg>
+                                </div>
+                                <div class="bonus__value">21K ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__controls">
+                        <a class="btn btn--common" href="">Обзор</a>
+                        <a class="btn" href="">Сайт</a>
+                    </div>
+                </div>
+                <div class="bookmaker-card">
+                    <div class="bookmaker-card__sect bookmaker-card__logo">
+                        <div class="bookmaker-logo">
+                            <img class="bookmaker-logo__img" src="assets/img/bookmakers/5.png">
+                            <div class="bookmaker-logo__check">
+                                <svg class="bookmaker-logo__check-svg" ><use href="assets/img/sprite.svg#check-circle"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__rating">
+                        <div class="rating">
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <div class="rating__value">4.2</div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__comments-count">
+                        <div class="comments-count">
+                            <svg class="comments-count__icon-svg"><use href="assets/img/sprite.svg#chat"></use></svg>
+                            <div class="comments-count__value">
+                                325
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__bonus">
+                        <div class="bonus">
+                            <div class="bonus__row">
+                                <div class="bonus__badge">
+                                    <div class="badge badge--extra">Эксклюзив</div>
+                                </div>
+                            </div>
+                            <div class="bonus__row">
+                                <div class="bonus__icon">
+                                    <svg class="bonus__icon-svg"><use href="assets/img/sprite.svg#gift"></use></svg>
+                                </div>
+                                <div class="bonus__value">215K ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__controls">
+                        <a class="btn btn--common" href="">Обзор</a>
+                        <a class="btn" href="">Сайт</a>
+                    </div>
+                </div>
+                <div class="bookmaker-card">
+                    <div class="bookmaker-card__sect bookmaker-card__logo">
+                        <div class="bookmaker-logo">
+                            <img class="bookmaker-logo__img" src="assets/img/bookmakers/5.png">
+                            <div class="bookmaker-logo__check">
+                                <svg class="bookmaker-logo__check-svg" ><use href="assets/img/sprite.svg#check-circle"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__rating">
+                        <div class="rating">
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <div class="rating__value">4.7</div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__comments-count">
+                        <div class="comments-count">
+                            <svg class="comments-count__icon-svg"><use href="assets/img/sprite.svg#chat"></use></svg>
+                            <div class="comments-count__value">
+                                325
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__bonus">
+                        <div class="bonus">
+                            <div class="bonus__row">
+                                <div class="bonus__badge">
+                                    <div class="badge badge--extra">Эксклюзив</div>
+                                </div>
+                            </div>
+                            <div class="bonus__row">
+                                <div class="bonus__icon">
+                                    <svg class="bonus__icon-svg"><use href="assets/img/sprite.svg#gift"></use></svg>
+                                </div>
+                                <div class="bonus__value">5K ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__controls">
+                        <a class="btn btn--common" href="">Обзор</a>
+                        <a class="btn" href="">Сайт</a>
+                    </div>
+                </div>
+                <div class="bookmaker-card">
+                    <div class="bookmaker-card__sect bookmaker-card__logo">
+                        <div class="bookmaker-logo">
+                            <img class="bookmaker-logo__img" src="assets/img/bookmakers/1.png">
+                            <div class="bookmaker-logo__check">
+                                <svg class="bookmaker-logo__check-svg" ><use href="assets/img/sprite.svg#check-circle"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__rating">
+                        <div class="rating">
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg active"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <svg class="rating__star-svg"><use href="assets/img/sprite.svg#star"></use></svg>
+                            <div class="rating__value">3.9</div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__comments-count">
+                        <div class="comments-count">
+                            <svg class="comments-count__icon-svg"><use href="assets/img/sprite.svg#chat"></use></svg>
+                            <div class="comments-count__value">
+                                325
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__bonus">
+                        <div class="bonus">
+                            <div class="bonus__row">
+                                <div class="bonus__badge">
+                                    <div class="badge badge--extra">Эксклюзив</div>
+                                </div>
+                            </div>
+                            <div class="bonus__row">
+                                <div class="bonus__icon">
+                                    <svg class="bonus__icon-svg"><use href="assets/img/sprite.svg#gift"></use></svg>
+                                </div>
+                                <div class="bonus__value">25K ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookmaker-card__sect bookmaker-card__controls">
+                        <a class="btn btn--common" href="">Обзор</a>
+                        <a class="btn" href="">Сайт</a>
+                    </div>
+                </div>
+
+            </div>
+             <div class="bookmakers-top__footer">
+                <div class="bookmakers-top__footer-desktop">
+                    <a class="link-more" href="">Смотреть дальше<svg class="link-more__img-svg"><use href='assets/img/sprite.svg#dart'></use></svg></a>
+                    <a class="link-accent" href="">Как формируется рейтинг?</a>
+                </div>
+                <div class="bookmakers-top__footer-mobile">
+                    <a class="bookmakers-top__footer-mobile-btn" href="">Смотреть полный рейтинг</a>
+                </div>
+             </div>
+        </div>
+
+        <div class="test"></div>
+
+    </main>
+
+<footer id="footer" class="footer">
+
+</footer>
+
+
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script defer src="assets/js/main.js"></script>
+
+</body>
+</html>
