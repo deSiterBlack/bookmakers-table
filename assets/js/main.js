@@ -38,6 +38,13 @@ function updateTop(btn) {
         bookmakersCards.forEach((card) => {
             card.classList.remove('bookmaker-card--invisible');
         });
+    })
+    .then(() => {
+        var bookmakersFilterItems = document.querySelectorAll(".bookmakers-filter__item.active");
+        bookmakersFilterItems.forEach((item) => {
+            item.classList.remove('active');
+        });
+        btn.parentNode.classList.add('active');
     });
 }
 function cardTemplate(element) {
